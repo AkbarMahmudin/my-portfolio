@@ -102,7 +102,7 @@ export const projects = [
     category: "web",
     tags: ["NodeJS", "NestJS", "NextJS", "ReactJS", "PostgreSQL", "Firebase", "TailwindCSS", "Prisma"],
     // description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageUrl: process.env.NODE_ENV === "production" ? "/my-portfolio" : "" + "/assets/projects/innovationday.png",
+    imageUrl: (process.env.NODE_ENV === "production" ? "/my-portfolio" : "") + "/assets/projects/innovationday.png",
     url: "https://chambray-bellflower-965.notion.site/Re-Develop-Innovation-Day-4c1337eecd84454dba26bd52dd5a71f1",
   },
   {
@@ -110,7 +110,7 @@ export const projects = [
     category: "web",
     tags: ["NodeJS", "ExpressJS", "MongoDB", "VueJS", "Redis", "Sqeuelize"],
     // description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageUrl: process.env.NODE_ENV === "production" ? "/my-portfolio" : "" + "/assets/projects/cephat.png",
+    imageUrl: (process.env.NODE_ENV === "production" ? "/my-portfolio" : "") + "/assets/projects/cephat.png",
     url: "https://chambray-bellflower-965.notion.site/Cephat-App-df900f4d01824f2a816f7b6ee2ea68b4",
   },
   {
@@ -118,7 +118,7 @@ export const projects = [
     category: "web",
     tags: ["PHP", "HTML", "CSS", "Javascript", "MySQL"],
     // description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageUrl: process.env.NODE_ENV === "production" ? "/my-portfolio" : "" + "/assets/projects/doxmaterial.png",
+    imageUrl: (process.env.NODE_ENV === "production" ? "/my-portfolio" : "") + "/assets/projects/doxmaterial.png",
     url: "https://chambray-bellflower-965.notion.site/Dox-Material-8ddf9d98d8c0456ca6b453391ceacf45",
   },
 ];
