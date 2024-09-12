@@ -2,6 +2,9 @@
 const nextConfig = {
   images: {
     domains: ["via.placeholder.com"],
+    basePath: "/my-portfolio",
+    output: "export",
+    reactStrictMode: true,
   }
 };
 
