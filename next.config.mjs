@@ -3,9 +3,9 @@ const nextConfig = {
   images: {
     domains: ["via.placeholder.com"],
   },
-  basePath: "/my-portfolio",
-  output: "export",
-  reactStrictMode: true,
+  basePath: process.env.NODE_ENV === "production" ? "/my-portfolio" : "",
+  // output: "export",
+  // reactStrictMode: true,
 };
 
 export default nextConfig;
