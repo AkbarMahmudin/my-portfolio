@@ -1,3 +1,3 @@
 export const icons = {
-  play: (process.env.NODE_ENV === "production" ? "/my-portfolio" : "") + '/assets/icons/play.svg',
+  play: '/assets/icons/play.svg',
 }
