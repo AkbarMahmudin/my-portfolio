@@ -12,7 +12,7 @@ const jetBrains = JetBrains_Mono({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Akbar's Porffolio Website",
+  title: "Akbar's Portfolio Website",
   description: "Read to the star stream and become a constellation",
 };
 
