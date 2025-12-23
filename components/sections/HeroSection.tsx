@@ -11,6 +11,8 @@ export const HeroSection = () => {
   const [bootComplete, setBootComplete] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
+  const resumeUrl = process?.env?.RESUME_URL ?? 'https://linkedin.com/in/akbar-mahmudin';
+
   useEffect(() => {
     const bootTimer = setTimeout(() => setBootComplete(true), 800);
     const contentTimer = setTimeout(() => setShowContent(true), 1200);
@@ -127,7 +129,7 @@ export const HeroSection = () => {
                   <User className="w-4 h-4" />
                   Access Profile
                 </Link>
-                <Link href="https://drive.google.com/file/d/1vfMUi_A2OOQJNnXhG2t-VdMUNdX8FSLa/view?usp=sharing" className="btn-system" target="_blank">
+                <Link href={resumeUrl} className="btn-system" target="_blank" suppressHydrationWarning>
                   <FileText className="w-4 h-4" />
                   Download Record
                 </Link>
