@@ -4,8 +4,13 @@ import { motion } from "framer-motion";
 import { SystemWindow } from "@/components/SystemWindow";
 import { RevealSection } from "@/components/RevealSection";
 import { Mail, Linkedin, Github, Send } from "lucide-react";
+import {Cta} from "@/interfaces/cta";
 
-export const ContactSection = () => {
+interface ContactSectionProps {
+  contacts: Cta[];
+}
+
+export const ContactSection = ({contacts}: ContactSectionProps) => {
   return (
     <section id="contact" className="relative py-20 bg-card/30">
       <div className="section-container">
@@ -62,37 +67,20 @@ export const ContactSection = () => {
                   transition={{ delay: 0.5, duration: 0.5 }}
                   className="flex flex-wrap justify-center gap-4"
                 >
-                  <motion.a 
-                    href="mailto:akbarmahmudin7@gmail.com"
-                    className="btn-system-primary"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Mail className="w-4 h-4" />
-                    Email
-                  </motion.a>
-                  <motion.a 
-                    href="https://linkedin.com/in/akbar-mahmudin"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-system"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Linkedin className="w-4 h-4" />
-                    LinkedIn
-                  </motion.a>
-                  <motion.a 
-                    href="https://github.com/AkbarMahmudin"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-system"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Github className="w-4 h-4" />
-                    GitHub
-                  </motion.a>
+                  {contacts.map((contact, index) => (
+                    <motion.a
+                      key={index}
+                      href={contact.url}
+                      target={contact.isBlank ? "_blank" : "_self"}
+                      rel="noopener noreferrer"
+                      className={contact.isPrimary ? "btn-system-primary" : "btn-system"}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Mail className="w-4 h-4" />
+                      {contact.label}
+                    </motion.a>
+                  ))}
                 </motion.div>
 
                 {/* System Note */}

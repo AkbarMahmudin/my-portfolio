@@ -1,0 +1,179 @@
+{
+  "id": 7,
+  "documentId": "lipq5fwgpwtvgb2brpfkiif5",
+  "fullname": "Akbar Mahmudin",
+  "role": "Backend Engineer",
+  "headline": "Designing resilient backend systems that remain stable even when the scenario escalates.",
+  "experienceYear": 2,
+  "createdAt": "2025-12-27T17:09:07.482Z",
+  "updatedAt": "2025-12-29T05:03:24.637Z",
+  "publishedAt": "2025-12-29T05:03:25.312Z",
+  "specialization": "Distributed Systems & API Design",
+  "attributes": [
+    {
+      "id": 54,
+      "name": "NodeJs",
+      "type": "core",
+      "category": "language",
+      "level": 10
+    },
+    {
+      "id": 55,
+      "name": "Typescript",
+      "type": "core",
+      "category": "language",
+      "level": 9
+    },
+    {
+      "id": 56,
+      "name": "NestJS",
+      "type": "core",
+      "category": "framework",
+      "level": 9
+    },
+    {
+      "id": 57,
+      "name": "PostgreSQL",
+      "type": "core",
+      "category": "database",
+      "level": 8
+    },
+    {
+      "id": 58,
+      "name": "MySQL",
+      "type": "core",
+      "category": "database",
+      "level": 8
+    },
+    {
+      "id": 59,
+      "name": "PHP",
+      "type": "secondary",
+      "category": "language",
+      "level": 8
+    },
+    {
+      "id": 60,
+      "name": "Laravel",
+      "type": "secondary",
+      "category": "framework",
+      "level": 9
+    },
+    {
+      "id": 61,
+      "name": "MongoDB",
+      "type": "secondary",
+      "category": "database",
+      "level": 8
+    },
+    {
+      "id": 62,
+      "name": "Redis",
+      "type": "secondary",
+      "category": "database",
+      "level": 9
+    },
+    {
+      "id": 63,
+      "name": "Docker",
+      "type": "secondary",
+      "category": "devops",
+      "level": 8
+    },
+    {
+      "id": 64,
+      "name": "RabbitMQ",
+      "type": "secondary",
+      "category": "devops",
+      "level": 8
+    }
+  ],
+  "stigmas": [
+    {
+      "id": 21,
+      "name": "API Architecture"
+    },
+    {
+      "id": 22,
+      "name": "Performance Optimization"
+    },
+    {
+      "id": 23,
+      "name": "Database Design"
+    },
+    {
+      "id": 24,
+      "name": "Clean Code"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": 9,
+      "companyName": "Jabar Digital Service",
+      "role": "Backend Engineer",
+      "location": "Bandung, ID",
+      "startDate": "2025-10-01",
+      "isCurrent": false,
+      "endDate": "2025-12-31"
+    },
+    {
+      "id": 10,
+      "companyName": "PT Folka Indonesia Teknologi",
+      "role": "Backend Engineer",
+      "location": "Bandung, ID",
+      "startDate": "2024-09-23",
+      "isCurrent": false,
+      "endDate": "2025-10-15"
+    },
+    {
+      "id": 11,
+      "companyName": "PT Telekomunikasi Indonesia Tbk",
+      "role": "Developer Intern",
+      "location": "Bandung, ID",
+      "startDate": "2023-08-01",
+      "isCurrent": false,
+      "endDate": "2023-12-31"
+    },
+    {
+      "id": 12,
+      "companyName": "PT Len Industri (Persero)",
+      "role": "Backend Developer Intern",
+      "location": "Bandung, ID",
+      "startDate": "2023-02-01",
+      "isCurrent": false,
+      "endDate": "2023-07-31"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 28,
+      "label": "Email",
+      "url": "mailto:akbarmahmudin7@gmail.com",
+      "isBlank": true,
+      "isPrimary": false
+    },
+    {
+      "id": 29,
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/akbar-mahmudin",
+      "isBlank": true,
+      "isPrimary": false
+    },
+    {
+      "id": 30,
+      "label": "Github",
+      "url": "https://github.com/AkbarMahmudin",
+      "isBlank": true,
+      "isPrimary": false
+    }
+  ],
+  "ctas": [
+    {
+      "id": 31,
+      "label": "Download Records",
+      "url": "https://drive.google.com/file/d/1D8pjXPtX4fGTS9LX0gtpQkz9LZwIZfv_/view?usp=sharing",
+      "isBlank": true,
+      "isPrimary": false
+    }
+  ]
+}

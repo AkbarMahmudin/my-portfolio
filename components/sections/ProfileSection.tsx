@@ -3,7 +3,9 @@
 import { SystemWindow } from "@/components/SystemWindow";
 import { RevealSection, StaggerContainer, StaggerItem } from "@/components/RevealSection";
 import { User, Calendar, Target, Lightbulb } from "lucide-react";
+import {Profile} from "@/interfaces/profile";
 
+// TODO: Remove
 const profileData = {
   name: "Akbar Mahmudin",
   role: "Backend Engineer",
@@ -12,11 +14,15 @@ const profileData = {
   philosophy: "I design backend systems that remain stable even when the scenario escalates.",
 };
 
-export const ProfileSection = () => {
+interface ProfileSectionProps {
+  profile: Partial<Profile>;
+}
+
+export const ProfileSection = ({ profile }: ProfileSectionProps) => {
   return (
     <section id="profile" className="relative py-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/20 to-background" />
-      
+
       <div className="section-container relative z-10">
         {/* Section Header */}
         <RevealSection>
@@ -42,9 +48,9 @@ export const ProfileSection = () => {
                   </div>
                   <div>
                     <h3 className="font-heading text-2xl font-bold text-foreground">
-                      {profileData.name}
+                      {profile.fullname}
                     </h3>
-                    <p className="font-mono text-sm text-accent">{profileData.role}</p>
+                    <p className="font-mono text-sm text-accent">{profile.role}</p>
                   </div>
                 </div>
 
@@ -56,7 +62,7 @@ export const ProfileSection = () => {
                       <span className="font-mono text-xs uppercase">Experience</span>
                     </div>
                     <p className="font-heading text-xl font-semibold text-foreground">
-                      {profileData.experience}
+                      {profile.experienceYear}+ Years
                     </p>
                   </div>
                   <div className="p-4 rounded-lg bg-secondary/30 border border-border/50">
@@ -65,7 +71,7 @@ export const ProfileSection = () => {
                       <span className="font-mono text-xs uppercase">Focus</span>
                     </div>
                     <p className="font-mono text-sm text-foreground">
-                      {profileData.specialization}
+                      {profile.specialization}
                     </p>
                   </div>
                 </div>
